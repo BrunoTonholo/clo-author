@@ -132,7 +132,7 @@ See `scoring-protocol.md` for weighted aggregation formula.
 
 | Component | File | Status | Description |
 |-----------|------|--------|-------------|
-| Literature | `quality_reports/lit_review_annotated.md` | Discovery (86/100) | 48 papers, Editor PASS. Gaps: tax competition, capitalization lit |
+| Literature | `quality_reports/lit_review_annotated.md` | Discovery COMPLETE (95/100) | 64 papers, 14 categories. All Editor gaps resolved. Ready for Strategy |
 | Data | `scripts/` | not started | TSE + FINBRA identified as primary sources |
 | Strategy | -- | not started | Close-election RDD planned, awaiting formalization |
 | Paper | `Paper/main.tex` | not started | Local wealth and taxation |

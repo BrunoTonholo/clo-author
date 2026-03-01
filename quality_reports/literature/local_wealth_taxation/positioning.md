@@ -55,7 +55,8 @@
 | 4 | Journal of Political Economy | If results are striking and mechanism is clear |
 | 5 | Journal of Development Economics | Brazilian municipality context |
 | 6 | Journal of Politics | Where Christensen & Garfias (2021) and Hollenbach & Silva (2019) published |
-| 7 | Journal of Urban Economics | Local taxation + urban governance |
+| 7 | Journal of the European Economic Association | Political economy; Besley (2004), Gagliarducci & Nannicini (2013) published here |
+| 8 | Journal of Urban Economics | Local taxation + urban governance |
 
 ---
 

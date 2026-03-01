@@ -9,12 +9,14 @@
 
 ## Summary Statistics
 
-- **Total papers surveyed:** 48
-- **Directly related (Proximity 4-5):** 12
-- **Same method, different context (Proximity 3):** 14
-- **Same context, different method (Proximity 2-3):** 10
-- **Theoretical foundations (Proximity 1-2):** 6
-- **Methods papers (Proximity 1):** 6
+- **Total papers surveyed:** 64
+- **Directly related (Proximity 4-5):** 9
+- **Same method, different context (Proximity 3):** 16
+- **Broader foundations (Proximity 2):** 29
+- **Methods and theoretical papers (Proximity 1):** 7
+- **Scooping risk:** LOW (confirmed in English and Portuguese)
+
+**Revision note (2026-03-01):** Added 16 papers in 6 new categories addressing Editor-identified gaps: tax competition (5), capitalization (3), conflict of interest (2), empirical Tiebout (2), property tax in developing countries (3), RDD external validity (1). Fixed proximity scores for Monteiro & Ferraz 2012 (4→3) and Szakonyi 2020 (5→4). Added Portuguese-language scooping check. Ghost citation (de Magalhães et al.) resolved -- paper verified and properly cited.
 
 ---
 
@@ -48,7 +50,7 @@ Uses an original dataset of 2,703 firms in Russia and a regression discontinuity
 
 ### 3. Szakonyi (2020) -- "Politics for Profit: Business, Elections, and Policymaking in Russia"
 **Publisher:** Cambridge University Press.
-**Relevance:** HIGH | **Proximity:** 5
+**Relevance:** HIGH | **Proximity:** 4
 
 Book-length treatment using RDD on 33,000+ Russian mayors and legislators. Businessperson politicians increase expenditures on roads and transport while leaving health and education spending untouched. They do not reduce budget deficits but adopt less competitive methods for selecting contractors, particularly in corruption-ripe construction. Provides comprehensive theory and evidence on how politicians with business assets shape fiscal policy to benefit themselves.
 
@@ -151,7 +153,7 @@ Legislators in the top wealth quintile are significantly more successful at adva
 ---
 
 ### 11. Monteiro and Ferraz (2012) -- "Does Oil Make Leaders Unaccountable? Evidence from Brazil's Offshore Oil Boom"
-**Relevance:** MEDIUM | **Proximity:** 4
+**Relevance:** MEDIUM | **Proximity:** 3
 
 Oil royalty windfalls to Brazilian municipalities create large incumbency advantages. Royalty payments are associated with increased municipal employees and investment in housing and urban infrastructure. Directly relevant to Brazilian municipal fiscal policy: exogenous revenue shocks shape how mayors spend and how voters respond.
 
@@ -617,7 +619,7 @@ Dynastic incumbents in the Philippines are ~50% richer than non-dynastic ones. T
 
 ---
 
-### 48. Hall and Thompson (2018) -- "Does Homeownership Influence Political Behavior? Evidence from Administrative Data"
+### 48. Hall and Thompson (2022) -- "Does Homeownership Influence Political Behavior? Evidence from Administrative Data"
 **Journal:** Journal of Politics, 84(1).
 **Relevance:** LOW | **Proximity:** 2
 
@@ -627,6 +629,244 @@ Buying a home leads to substantially more participation in local elections. The 
 - **Data:** U.S. homeownership and voting records
 - **Main result:** Homeownership increases local election turnout (+, moderate)
 - **Key for us:** Background on how property ownership creates local political engagement
+
+---
+
+## Category 9: Tax Competition and Strategic Interaction
+
+### 49. Wilson (1986) -- "A Theory of Interregional Tax Competition"
+**Journal:** Journal of Urban Economics, 19(3), 296-315.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Wilson (1986) develops a formal model of tax competition among jurisdictions that independently set tax rates on mobile capital to finance local public goods. Each jurisdiction is small relative to the national capital market and takes the net-of-tax return on capital as given. The key result is that non-cooperative tax-setting leads to inefficiently low tax rates and underprovision of local public goods, because each jurisdiction ignores the positive fiscal externality its tax increase confers on other jurisdictions.
+
+- **Identification:** Theoretical model (multi-jurisdiction Nash equilibrium)
+- **Data:** N/A (pure theory)
+- **Main result:** Tax rates on mobile capital are inefficiently low in Nash equilibrium (-, theoretical)
+- **Key for us:** Provides theoretical foundation for asking whether a mayor who suppresses IPTU triggers strategic responses from neighboring municipalities
+
+---
+
+### 50. Zodrow and Mieszkowski (1986) -- "Pigou, Tiebout, Property Taxation, and the Underprovision of Local Public Goods"
+**Journal:** Journal of Urban Economics, 19(3), 356-370.
+**Relevance:** MEDIUM | **Proximity:** 3
+
+Published in the same JUE issue as Wilson (1986), the "ZM model" shows that interjurisdictional competition for mobile capital leads to property tax rates that are too low and public good provision that is too little relative to the social optimum. The paper specifically addresses property taxation and the Tiebout hypothesis, showing that even when households sort efficiently, the property tax generates a fiscal externality. This establishes the "new view" of property taxation: local property taxes function as distortionary taxes on mobile capital rather than benefit fees.
+
+- **Identification:** Theoretical model (general equilibrium with mobile capital)
+- **Data:** N/A (pure theory)
+- **Main result:** Property taxes are set inefficiently low under interjurisdictional competition (-, theoretical)
+- **Key for us:** Most directly relevant foundational theory -- concerns property taxation specifically (IPTU). If wealthy mayors suppress IPTU further below already-suboptimal competitive levels, the welfare cost is compounded
+
+---
+
+### 51. Keen and Konrad (2013) -- "The Theory of International Tax Competition and Coordination"
+**Book chapter:** Handbook of Public Economics, Vol. 5, pp. 257-328.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Definitive survey of three decades of tax competition research. Covers the basic model and extensions (asymmetric jurisdictions, multiple instruments, agglomeration), political economy of tax competition (yardstick competition, Leviathan models), and empirical evidence. Key empirical findings: strong evidence of strategic interaction (tax reaction function slopes of 0.3-0.7), mixed evidence on "race to the bottom" in levels, and evidence that smaller jurisdictions set lower rates. Discusses the political economy intersection where our paper sits.
+
+- **Identification:** Survey (synthesizes empirical findings from spatial econometrics, IV, and natural experiments)
+- **Data:** N/A (survey)
+- **Main result:** Robust theoretical prediction of "too low" taxes under competition; empirical strategic interaction slopes 0.3-0.7
+- **Key for us:** Essential reference for positioning in the broader tax competition literature. Signals to JPubE/JUE referees that we engage with the theoretical context
+
+---
+
+### 52. Agrawal (2015) -- "The Tax Gradient: Spatial Aspects of Fiscal Competition"
+**Journal:** American Economic Journal: Economic Policy, 7(2), 1-29.
+**Relevance:** MEDIUM | **Proximity:** 3
+
+Estimates how strategic tax interaction decays with geographic distance using local sales tax rates across U.S. jurisdictions near the Kansas-Missouri border. Finds strong positive strategic interaction: a 1 pp increase in neighbor's rate leads to ~0.4-0.6 pp own-rate increase for immediately adjacent jurisdictions, declining rapidly with distance. Also finds that entry of a new taxing jurisdiction lowers neighboring jurisdictions' rates.
+
+- **Identification:** Spatial econometrics with IV (instruments: neighbor demographic characteristics); Kansas-Missouri border as variation source
+- **Data:** Jurisdiction-level sales tax rates, Kansas and Missouri, 2002-2011
+- **Main result:** Positive strategic complementarity; own-rate elasticity ~0.4-0.6 for immediate neighbors, declining with distance (+, moderate)
+- **Key for us:** Provides the empirical methodology for testing whether wealthy mayors' IPTU decisions generate spatial spillovers to neighboring Brazilian municipalities
+
+---
+
+### 53. Parchet (2019) -- "Are Local Tax Rates Strategic Complements or Strategic Substitutes?"
+**Journal:** American Economic Journal: Economic Policy, 11(2), 189-224.
+**Relevance:** MEDIUM | **Proximity:** 3
+
+Studies tax competition among Swiss municipalities using IV based on cantonal fiscal equalization reforms. Finds that naive spatial regressions are badly biased: OLS shows strategic complementarity (+0.3 to +0.5) but IV reveals strategic substitutability (-0.5 to -0.7). The mechanism is income sorting (Tiebout mobility) -- when a neighbor cuts taxes, high-income households move there, forcing the own jurisdiction to raise rates to maintain revenue.
+
+- **Identification:** IV exploiting cantonal fiscal equalization reforms as shifters of neighbor incentives
+- **Data:** Swiss municipality-level income tax rates, 1983-2012
+- **Main result:** Strategic substitutability: neighbor rate cuts lead to own-rate increases (-, moderate). OLS bias reverses the sign
+- **Key for us:** Critical methodological warning for our spatial analysis. Connects to Tiebout/sorting concern. For Brazil, where inter-municipal mobility is lower than Switzerland, sorting effects may be weaker
+
+---
+
+## Category 10: Tax Capitalization and Property Values
+
+### 54. Oates (1969) -- "The Effects of Property Taxes and Local Public Spending on Property Values"
+**Journal:** Journal of Political Economy, 77(6), 957-971.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+First systematic empirical test of property tax capitalization. Using cross-sectional data from 53 New Jersey municipalities, Oates showed that higher property tax rates are associated with lower property values and higher school expenditures with higher values, consistent with the Tiebout hypothesis. Estimated magnitudes broadly consistent with full capitalization at prevailing discount rates. Foundational paper establishing why a mayor with local real estate should care about local tax policy.
+
+- **Identification:** Cross-sectional OLS (property values on tax rates and expenditures, controlling for community characteristics)
+- **Data:** 1960 U.S. Census, 53 municipalities in the NJ portion of NYC metro area
+- **Main result:** Higher taxes -> lower property values, roughly full capitalization (-, moderate-large)
+- **Key for us:** Establishes the economic mechanism underlying "skin in the game": if IPTU capitalizes into property values, locally-wealthy mayors have dollar-for-dollar stakes in tax policy
+
+---
+
+### 55. Brueckner (1979) -- "Property Values, Local Public Expenditure and Economic Efficiency"
+**Journal:** Journal of Public Economics, 11(2), 223-245.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Developed the theoretical link between property value maximization by local governments and efficient public goods provision. If capitalization is complete, a government maximizing aggregate property values will provide efficient public goods. Empirical test using 54 Boston-area communities found an inverted-U relationship between property values and expenditures, with observed spending near the peak -- consistent with approximate efficiency.
+
+- **Identification:** Cross-sectional regression with quadratic specification testing property-value-maximizing expenditure levels
+- **Data:** 1970 U.S. Census, 54 communities in the Boston SMSA
+- **Main result:** Property values follow inverted-U with public expenditures, peaking near observed levels (+, moderate)
+- **Key for us:** If self-interested wealthy mayors maximize own property values, do they incidentally improve public goods provision? Key for welfare interpretation of results
+
+---
+
+### 56. Palmon and Smith (1998) -- "New Evidence on Property Tax Capitalization"
+**Journal:** Journal of Political Economy, 106(5), 1099-1111.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Exploited a boundary discontinuity design comparing homes on opposite sides of school district boundaries in Houston, TX. By holding neighborhood characteristics constant, isolated the capitalization effect from confounders that plagued cross-sectional studies. Found approximately 100% capitalization: a $1 increase in PDV of future tax obligations reduces home price by approximately $1.
+
+- **Identification:** Boundary discontinuity design (spatial RDD) comparing homes on same street in different tax jurisdictions
+- **Data:** Houston, TX housing transactions near school district boundaries; Harris County tax records
+- **Main result:** Full (~100%) capitalization of property tax differentials into home prices (-, large)
+- **Key for us:** Full capitalization implies maximum "skin in the game" for locally-wealthy mayors. Also an identification threat: post-election wealth is endogenous to tax decisions. Supports use of pre-election wealth in our RDD
+
+---
+
+## Category 11: Conflict of Interest and Political Connections
+
+### 57. Fisman and Wang (2015) -- "The Mortality Cost of Political Connections"
+**Journal:** Review of Economic Studies, 82(4), 1346-1382.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Studies the costs of political connections in China by examining workplace safety in connected firms. Connected firms have fatality rates approximately 2-3 times higher than unconnected firms, and the premium increases with connection strength. When a connected politician leaves power, fatality rates decline. Political connections enable firms to circumvent safety regulations, revealing a dark side of patronage.
+
+- **Identification:** Event-study design around patron transitions; compares firms whose patrons are in vs. out of power
+- **Data:** Chinese Industrial Census + workplace fatality records from State Administration of Work Safety
+- **Main result:** Connected firms have 2-3x higher fatality rates (+, very large); effect reverses when patron exits
+- **Key for us:** Establishes that politicians' private connections distort regulatory outcomes -- analogous to whether mayors' wealth stakes distort tax policy
+
+---
+
+### 58. Khwaja and Mian (2005) -- "Do Lenders Favor Politically Connected Firms?"
+**Journal:** Quarterly Journal of Economics, 120(4), 1371-1411.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Pakistani firm directors who win elected office gain influence over government-owned banks. Government banks lend 45% more to connected firms, with 50% higher default rates. The effect is absent in private banks, confirming the political channel. Implied rents are 0.02-0.04% of GDP annually.
+
+- **Identification:** Within-firm comparison across government vs. private banks (firm FE); DiD comparing connected vs. unconnected firms
+- **Data:** Universe of corporate lending from State Bank of Pakistan's Credit Information Bureau; merged with election candidate lists
+- **Main result:** Government banks lend 45% more to connected firms (+, large); 50% higher default rates (+, large)
+- **Key for us:** Canonical paper on politicians using public institutions for private benefit. Mechanism maps directly onto whether mayors suppress property taxes for self-enrichment
+
+---
+
+## Category 12: Empirical Tiebout Sorting
+
+### 59. Epple and Sieg (1999) -- "Estimating Equilibrium Models of Local Jurisdictions"
+**Journal:** Journal of Political Economy, 107(4), 645-681.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Develops and estimates a structural equilibrium model of Tiebout sorting across local jurisdictions. Households heterogeneous in income and preferences choose among communities differing in property tax rates, public good provision, and housing prices. Estimated using 92 Boston-area communities, the model provides a tight fit to observed income distributions and tax rates, demonstrating that Tiebout sorting mechanisms are quantitatively important and empirically tractable.
+
+- **Identification:** Structural estimation of general equilibrium Tiebout model (maximum likelihood)
+- **Data:** 92 communities in the Boston SMSA, 1980 Census; property tax rates, school expenditures, income distributions
+- **Main result:** Strong empirical support for Tiebout sorting; substantial preference heterogeneity for public goods (+, model fits well)
+- **Key for us:** Foundational for understanding why sorting is a primary referee concern. If households sort in response to IPTU differences, observed variation reflects composition effects alongside policy choices
+
+---
+
+### 60. Banzhaf and Walsh (2008) -- "Do People Vote with Their Feet? An Empirical Test of Tiebout"
+**Journal:** American Economic Review, 98(3), 843-863.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Direct empirical test of Tiebout's "voting with their feet" hypothesis using pollution data across U.S. communities. Communities experiencing pollution reductions gain population, higher-income residents, and increased housing values. Strong evidence that households sort in response to local amenity changes.
+
+- **Identification:** Panel data with community FE; exploits within-community changes in TRI-reported pollution over time
+- **Data:** EPA Toxics Release Inventory + Census tract demographics, 1988-2000
+- **Main result:** Pollution reductions attract higher-income residents and increase housing values (+, moderate)
+- **Key for us:** Empirically validates that households sort in response to local policy/amenity changes -- the exact concern referees will raise about IPTU manipulation
+
+---
+
+## Category 13: Property Tax in Developing Countries
+
+### 61. Bahl and Martinez-Vazquez (2007/2010) -- "The Property Tax in Developing and Transitional Countries"
+**Book chapter:** In *Challenging the Conventional Wisdom on the Property Tax*, Lincoln Institute of Land Policy.
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Comprehensive overview documenting under-utilization of property taxes in developing countries (0.3-0.6% of GDP vs. 1-3% in OECD). Identifies three main barriers: incomplete cadastres, weak administrative capacity, and political resistance from property-owning elites who influence local policy. Argues property taxation is the most promising underutilized revenue source for subnational governments.
+
+- **Identification:** Cross-country descriptive analysis and comparative case studies
+- **Data:** IMF Government Finance Statistics; World Bank indicators; country case studies
+- **Main result:** Property taxes in developing countries raise 0.3-0.6% of GDP vs. 1-3% in OECD (descriptive, large gap); elite capture a key barrier
+- **Key for us:** Directly motivates our research: property tax under-collection driven partly by elite resistance. Brazil's ~0.5% GDP in property taxes vs. 1-2% potential maps onto this gap
+
+---
+
+### 62. Norregaard (2013) -- "Taxing Immovable Property: Revenue Potential and Implementation Challenges"
+**IMF Working Paper WP/13/129.**
+**Relevance:** MEDIUM | **Proximity:** 2
+
+Comprehensive IMF assessment documenting that property taxes average ~0.6% of GDP in developing countries vs. ~2% in advanced economies, with realistic potential to double. Property taxes are highly visible, creating strong political incentives for under-collection. Local politicians face concentrated opposition from property owners and diffuse benefits from revenue generation.
+
+- **Identification:** Cross-country descriptive and normative analysis
+- **Data:** IMF GFS; OECD Revenue Statistics; Lincoln Institute data
+- **Main result:** Developing countries collect ~0.6% GDP in property taxes vs. ~2% in advanced economies; revenue potential roughly double current levels
+- **Key for us:** Provides international context for Brazilian IPTU under-collection. Framework of "visibility + elite resistance = under-collection" is precisely what we test at the individual politician level
+
+---
+
+### 63. Bird and Slack (2004) -- "International Handbook of Land and Property Taxation"
+**Publisher:** Edward Elgar Publishing.
+**Relevance:** LOW | **Proximity:** 1
+
+Comprehensive international handbook surveying land and property taxation across 25+ countries. Key themes: property tax design and local autonomy, tension between economic efficiency and political feasibility, valuation challenges in thin markets. Brazil chapter documents institutional features of IPTU. Establishes consensus that property taxes are efficient but systematically under-exploited globally.
+
+- **Identification:** Cross-country comparative institutional analysis
+- **Data:** Country-specific administrative data; OECD Revenue Statistics; IMF GFS
+- **Main result:** Property taxes are theoretically efficient and practically underutilized globally (descriptive)
+- **Key for us:** Background reference establishing international property tax consensus. Brazil chapter documents IPTU institutional features
+
+---
+
+## Category 14: RDD Methodology -- External Validity (Ghost Citation Fix)
+
+### 64. de Magalhães, Hangartner, Hirvonen, Meriläinen, Ruiz, and Tukiainen (2025) -- "When Can We Trust Regression Discontinuity Design Estimates from Close Elections?"
+**Journal:** Political Analysis (forthcoming/advance online, DOI: 10.1017/pan.2024.28).
+**Relevance:** MEDIUM (methodological) | **Proximity:** 2
+
+Uses exact ties in personal votes in local elections in Colombia and Finland -- resolved by random lottery -- as experimental benchmarks against which to evaluate close-election RDD estimators. Finds that bias-corrected robust inference (CCT) outperforms local linear regression with conventional inference in replicating experimental estimates of the incumbency advantage. Incumbency effects are highly heterogeneous in magnitude and sign across countries and contexts, raising external validity concerns for politician-characteristic RDD.
+
+- **Identification:** Experimental benchmark (lottery-resolved ties) compared against RDD estimates
+- **Data:** Colombian and Finnish local elections with exact-tie lotteries
+- **Main result:** CCT estimator performs better than LLR; incumbency effects highly heterogeneous across contexts
+- **Key for us:** Directly relevant to our methodology -- validates the CCT approach we will use, while cautioning about heterogeneity in close-election RDD estimates
+
+---
+
+## Portuguese-Language Scooping Check
+
+**Date:** 2026-03-01
+**Venues searched:** ANPEC proceedings, IPEA Discussion Papers, SciELO Brazil, FGV working papers, PUC-Rio working papers, Google Scholar (Portuguese terms), SSRN
+
+**Search terms:** "patrimônio prefeitos," "riqueza prefeitos," "bens candidatos IPTU," "imposto propriedade municipal prefeito," "declaração bens candidatos tributação," "wealth mayors Brazil property tax"
+
+**Result:** No published paper or working paper in Brazilian academic outlets directly combines TSE asset declaration data with FINBRA fiscal data to study the effect of mayors' local wealth concentration on taxation policy. Media coverage exists (e.g., Agência Brasil 2016 noting 32 municipalities where elected mayors' patrimony exceeds 10% of local GDP), but no academic treatment of the causal wealth-to-policy channel.
+
+**Related but not competing:**
+- IPEA discussion papers study IPTU under-collection at the municipality level but do not link to individual mayor characteristics
+- ANPEC papers using TSE data focus on wealth accumulation during office (returns to office), not pre-existing wealth effects on policy
+- FGV working papers on political finance focus on campaign contributions rather than personal wealth-policy transmission
+
+**Scooping risk:** LOW. The geographic-concentration-of-wealth angle appears novel in both English and Portuguese literatures.
 
 ---
 
@@ -1099,7 +1339,7 @@ Buying a home leads to substantially more participation in local elections. The 
 
 2. **Direction of wealth effect on taxation.** Wealthy mayors could either (a) suppress property taxes to benefit their own real estate (self-dealing), (b) improve fiscal administration because they have better information and management skills (competence), or (c) show no effect because ideology and party discipline dominate. The sign is theoretically ambiguous.
 
-3. **External validity of RDD politician-characteristic estimates.** de Magalhaes et al. (2020) and related methodological work question what close-election RDD estimates capture when applied to politician characteristics. The LATE is for a very specific complier population (marginal election outcomes).
+3. **External validity of RDD politician-characteristic estimates.** de Magalhães et al. (2025) and Marshall (2022) question what close-election RDD estimates capture when applied to politician characteristics. The LATE is for a very specific complier population (marginal election outcomes).
 
 ### What Is the Gap -- Where Our Paper Fits
 
